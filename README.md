@@ -6,7 +6,7 @@
 - 📫 How to reach me **bvslahari@gmail.com**
 
 # 💫 About Me:
-- First-year CSE student @ GITAM<br>- Learning Python, GitHub, AIML Fundamentals <br>-  Building cool beginner projects — one line of code at a time!<br>- Exploring AI, storytelling, and creative coding<br>- Personal projects to level up my Git & GitHub skills<br><br><br>
+- Second-year CSE student @ GITAM<br>- Learning Python, GitHub, AIML Fundamentals <br>-  Building cool beginner projects — one line of code at a time!<br>- Exploring AI, storytelling, and creative coding<br>- Personal projects to level up my Git & GitHub skills<br><br><br>
 
 
 ## 🌐 Socials:
