@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hey! I’m a CSE Sophomore at GITAM University (Batch of 2024–2028), passionate about turning 1s and 0s into something meaningful.<br>I’ve got a strong foundation in C programming. I enjoy solving complex problems and pushing for clean, efficient solutions. <br>Lately, I’m expanding my skillset with Python to dive deeper into software development and beyond.<br>Outside the world of code, I run a YouTube channel where I create videos on various stuff which include my hobbies, thoughts, etc.
+Hey! I’m a CSE Sophomore at GITAM University (Batch of 2024–2028)
 
 
 ## 🌐 Socials:
