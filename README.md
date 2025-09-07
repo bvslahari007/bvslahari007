@@ -1,5 +1,9 @@
 # 💫 About Me:
-Hey! I’m a CSE Sophomore at GITAM University (Batch of 2024–2028)
+💻 I’m a Computer Science undergrad who enjoys coding and building cool projects.
+✨ I’m curious about Physics, Astronomy, and how tech connects with the universe.
+🌱 I’m still learning, sometimes slow, but always steady.
+🚀 I love turning curiosity into small experiments, from simulations to creative builds.
+🎨 On the side, I design content on Canva and share my journey on YouTube.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/lahari_bvs) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/vinaya-sangeeta-lahari-baswa-027892316) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@LahariBVS) 
