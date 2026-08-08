@@ -1,0 +1,20 @@
+<svg width="100%" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<defs>
+  <linearGradient id="starchartbg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#170833"/>
+    <stop offset="100%" stop-color="#0c0620"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="64" fill="url(#starchartbg)"/>
+<rect x="3" y="3" width="894" height="58" fill="none" stroke="#FFE94A" stroke-width="3"/>
+<g fill="none" stroke="#5FE0FF" stroke-width="4">
+  <path d="M14,14 h22 M14,14 v22"/>
+  <path d="M886,14 h-22 M886,14 v22"/>
+  <path d="M14,50 h22 M14,50 v-22"/>
+  <path d="M886,50 h-22 M886,50 v-22"/>
+</g>
+<circle cx="52" cy="32" r="6" fill="#FFE94A">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<text x="466" y="40" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="22" letter-spacing="6" fill="#FFE94A">STAR_CHART</text>
+</svg>
