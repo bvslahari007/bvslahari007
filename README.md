@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assests/astro-pixel-banner.svg.svg" width="60%"/>
+<img src="./assets/astro-pixel-banner.svg" width="60%"/>
 
 <br/><br/>
 
