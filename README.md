@@ -44,22 +44,6 @@
 <br/>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:170833,100:0c0620&height=55&text=PROJECT%20INVENTORY&fontSize=18&fontColor=FF5FA2&fontAlignY=60&fontFamily=Press+Start+2P" width="60%"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-| ITEM | LOADOUT | ACTION |
-|:---|:---|:---:|
-| **🪐 Cliero AI** | Next.js · TypeScript · Supabase · Gemini API | [▶ PLAY](https://cliero-ai.vercel.app) · [📦 SRC](https://github.com/bvslahari007/cliero-ai) |
-
-</div>
-
-<br/>
-
-<div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:170833,100:0c0620&height=55&text=STATS%20PANEL&fontSize=18&fontColor=FFE94A&fontAlignY=60&fontFamily=Press+Start+2P" width="60%"/>
 </div>
 
