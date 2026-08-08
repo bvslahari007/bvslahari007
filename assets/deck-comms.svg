@@ -1,15 +1,15 @@
 <svg width="100%" height="56" viewBox="0 0 900 56" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
-<rect width="900" height="56" fill="#05060a"/>
-<line x1="24" y1="8" x2="876" y2="8" stroke="#8A94A6" stroke-width="1"/>
-<line x1="24" y1="48" x2="876" y2="48" stroke="#8A94A6" stroke-width="1"/>
-<g stroke="#D98E4A" stroke-width="2">
+<rect width="900" height="56" fill="#05020a"/>
+<line x1="24" y1="8" x2="876" y2="8" stroke="#5FDFFF" stroke-width="1"/>
+<line x1="24" y1="48" x2="876" y2="48" stroke="#5FDFFF" stroke-width="1"/>
+<g stroke="#FF6B1A" stroke-width="2">
   <line x1="24" y1="8" x2="24" y2="18"/>
   <line x1="876" y1="8" x2="876" y2="18"/>
   <line x1="24" y1="48" x2="24" y2="38"/>
   <line x1="876" y1="48" x2="876" y2="38"/>
 </g>
-<circle cx="46" cy="28" r="3.5" fill="#D98E4A">
+<circle cx="46" cy="28" r="3.5" fill="#FF6B1A">
   <animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/>
 </circle>
-<text x="463" y="34" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" letter-spacing="3" fill="#E6E2D8">OPEN CHANNEL // CONTACT</text>
+<text x="463" y="34" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" letter-spacing="3" fill="#FF4FA3">OPEN CHANNEL // CONTACT</text>
 </svg>
