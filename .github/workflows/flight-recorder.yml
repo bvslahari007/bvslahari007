@@ -1,7 +1,7 @@
-name: Generate Activity Assets
+name: Generate Flight Recorder Animation
 
 on:
-  # Regenerate a few times a day so the snake and pulse chart stay current
+  # Regenerate a few times a day so the flight recorder stays current
   schedule:
     - cron: "0 */12 * * *"
   # Allow manual runs from the Actions tab
@@ -19,9 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
@@ -31,20 +28,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Generate monthly pulse chart (Star Chart deck)
-        env:
-          GH_USERNAME: ${{ github.repository_owner }}
-          # Falls back to the default token; add a classic PAT secret named
-          # PULSE_TOKEN if the default token can't read contribution data.
-          GH_TOKEN: ${{ secrets.PULSE_TOKEN || secrets.GITHUB_TOKEN }}
-        run: node scripts/generate-pulse.js
-
-      - name: Push generated assets to the output branch
+      - name: Push generated SVGs to the output branch
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
           target_branch: output

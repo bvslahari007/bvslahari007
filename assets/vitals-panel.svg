@@ -1,77 +1,56 @@
-<svg width="100%" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<svg width="100%" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
 <defs>
-  <linearGradient id="vitalspanelbg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#170833"/>
-    <stop offset="100%" stop-color="#0c0620"/>
-  </linearGradient>
-  <linearGradient id="hpbar" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#5FE0FF"/>
-    <stop offset="100%" stop-color="#FF5FA2"/>
+  <linearGradient id="panelbg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#05060a"/>
+    <stop offset="100%" stop-color="#0d0f14"/>
   </linearGradient>
 </defs>
 
-<rect width="900" height="300" fill="url(#vitalspanelbg)"/>
-<rect x="3" y="3" width="894" height="294" fill="none" stroke="#5FE0FF" stroke-width="3"/>
+<rect width="900" height="280" fill="url(#panelbg)"/>
+<rect x="2" y="2" width="896" height="276" fill="none" stroke="#8A94A6" stroke-width="1"/>
 
-<g fill="none" stroke="#FFE94A" stroke-width="4">
-  <path d="M14,14 h24 M14,14 v24"/>
-  <path d="M886,14 h-24 M886,14 v24"/>
-  <path d="M14,286 h24 M14,286 v-24"/>
-  <path d="M886,286 h-24 M886,286 v-24"/>
+<g stroke="#D98E4A" stroke-width="2">
+  <line x1="2" y1="2" x2="16" y2="2"/><line x1="2" y1="2" x2="2" y2="16"/>
+  <line x1="898" y1="2" x2="884" y2="2"/><line x1="898" y1="2" x2="898" y2="16"/>
+  <line x1="2" y1="278" x2="16" y2="278"/><line x1="2" y1="278" x2="2" y2="264"/>
+  <line x1="898" y1="278" x2="884" y2="278"/><line x1="898" y1="278" x2="898" y2="264"/>
 </g>
 
-<rect x="36" y="34" width="14" height="14" fill="#FF5FA2"/>
-<text x="60" y="46" font-family="'Courier New',monospace" font-weight="bold" font-size="20" letter-spacing="4" fill="#FF5FA2">PLAYER STATUS</text>
-<rect x="36" y="62" width="828" height="2" fill="#3d2a70"/>
-
-<circle cx="46" cy="112" r="5" fill="#5FE0FF">
-  <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0s" repeatCount="indefinite"/>
+<text x="30" y="42" font-family="'Courier New',monospace" font-size="14" letter-spacing="3" fill="#8A94A6">MANIFEST</text>
+<circle cx="778" cy="37" r="4" fill="#D98E4A">
+  <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
 </circle>
-<text x="62" y="118" font-family="'Courier New',monospace" font-weight="bold" font-size="18" letter-spacing="2" fill="#FF5FA2">CLASS</text>
-<text x="200" y="118" font-family="'Courier New',monospace" font-size="18" fill="#e8e8ff">CS Undergrad &#183; Data Science</text>
+<text x="862" y="42" text-anchor="end" font-family="'Courier New',monospace" font-size="14" letter-spacing="2" fill="#D98E4A">NOMINAL</text>
+<line x1="30" y1="56" x2="870" y2="56" stroke="#8A94A6" stroke-width="1" opacity="0.5"/>
 
-<circle cx="46" cy="156" r="5" fill="#5FE0FF">
-  <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0.4s" repeatCount="indefinite"/>
-</circle>
-<text x="62" y="162" font-family="'Courier New',monospace" font-weight="bold" font-size="18" letter-spacing="2" fill="#FF5FA2">QUEST</text>
-<text x="200" y="162" font-family="'Courier New',monospace" font-size="18" fill="#e8e8ff">Build cool stuff, break it, fix</text>
+<text x="30" y="102" font-family="'Courier New',monospace" font-size="17" fill="#8A94A6">DESIGNATION</text>
+<text x="230" y="102" font-family="'Courier New',monospace" font-size="17" fill="#E6E2D8">CS Undergrad &#183; Data Science</text>
 
-<circle cx="46" cy="200" r="5" fill="#5FE0FF">
-  <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
-</circle>
-<text x="62" y="206" font-family="'Courier New',monospace" font-weight="bold" font-size="18" letter-spacing="2" fill="#FF5FA2">BASE</text>
-<text x="200" y="206" font-family="'Courier New',monospace" font-size="18" fill="#e8e8ff">Visakhapatnam, India</text>
+<text x="30" y="146" font-family="'Courier New',monospace" font-size="17" fill="#8A94A6">OBJECTIVE</text>
+<text x="230" y="146" font-family="'Courier New',monospace" font-size="17" fill="#E6E2D8">Build cool stuff, break it, fix</text>
 
-<text x="36" y="250" font-family="'Courier New',monospace" font-weight="bold" font-size="18" letter-spacing="2" fill="#FF5FA2">HP</text>
-<g>
-  <rect x="90" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="127" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="164" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="201" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="238" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="275" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="312" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="349" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="386" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="423" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="460" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="497" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="534" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="571" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="608" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="645" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="682" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="719" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="756" y="234" width="33" height="18" fill="url(#hpbar)"/>
-  <rect x="793" y="234" width="33" height="18" fill="url(#hpbar)"/>
-</g>
-<text x="864" y="248" text-anchor="end" font-family="'Courier New',monospace" font-weight="bold" font-size="16" letter-spacing="2" fill="#FFE94A">ONLINE</text>
+<text x="30" y="190" font-family="'Courier New',monospace" font-size="17" fill="#8A94A6">LAUNCH SITE</text>
+<text x="230" y="190" font-family="'Courier New',monospace" font-size="17" fill="#E6E2D8">Visakhapatnam, India</text>
 
-<rect x="36" y="70" width="828" height="2" fill="#5FE0FF" opacity="0.35">
-  <animate attributeName="y" values="70;282;70" dur="7s" repeatCount="indefinite"/>
-</rect>
+<text x="30" y="238" font-family="'Courier New',monospace" font-size="17" fill="#8A94A6">LIFE SUPPORT</text>
 
-<rect x="850" y="272" width="12" height="16" fill="#5FE0FF">
-  <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+<line x1="230" y1="222" x2="230" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="287" y1="222" x2="287" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="344" y1="222" x2="344" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="401" y1="222" x2="401" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="458" y1="222" x2="458" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="515" y1="222" x2="515" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="572" y1="222" x2="572" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="629" y1="222" x2="629" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="686" y1="222" x2="686" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="743" y1="222" x2="743" y2="230" stroke="#8A94A6" stroke-width="1"/>
+<line x1="800" y1="222" x2="800" y2="230" stroke="#8A94A6" stroke-width="1"/>
+
+<rect x="230" y="230" width="570" height="14" fill="none" stroke="#8A94A6" stroke-width="1"/>
+<rect x="232" y="232" width="543" height="10" fill="#D98E4A"/>
+<text x="862" y="242" text-anchor="end" font-family="'Courier New',monospace" font-size="16" fill="#D98E4A">96%</text>
+
+<rect x="30" y="255" width="840" height="1" fill="#8A94A6" opacity="0.35">
+  <animate attributeName="y" values="70;255;70" dur="9s" repeatCount="indefinite"/>
 </rect>
 </svg>
