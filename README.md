@@ -10,15 +10,12 @@
 
 <img src="./assets/astro-pixel-banner.svg" width="60%"/>
 
-<br/><br/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&duration=3000&pause=1200&color=FF5FA2&center=true&vCenter=true&width=700&height=60&lines=LAHARI.EXE;CODE+%2B+COFFEE+%2B+CHAOS;MY+DIGITAL+PLAYGROUND;PRESS+START" alt="Typing SVG" />
 </a>
 
 </div>
-
-<br/><br/>
 
 <div align="center">
 <img src="./assets/deck-vitals.svg" width="70%"/>
