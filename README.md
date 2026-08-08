@@ -37,7 +37,7 @@
 
 <div align="center">
 
-<img src="./assets/galaxy-activity-map.svg" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bvslahari007&theme=github-dark&bg_color=0a0518&color=5fe0ff&line=ff5fa2&point=ffe94a&area=true&area_color=8a5fff&hide_border=true" width="100%"/>
 
 </div>
 
