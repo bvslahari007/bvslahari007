@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="./assets/event-horizon-banner.svg" width="70%"/>
+<img src="./assets/telemetry-banner.svg" width="100%"/>
 
 
 <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=20&duration=3000&pause=1200&color=FF9A4D&center=true&vCenter=true&width=700&height=60&lines=LAHARI.EXE;CODE+%2B+COFFEE+%2B+COORDINATES;EXPLORER+OF+DIGITAL+FRONTIERS;TRANSMISSION+READY" alt="identity"/>

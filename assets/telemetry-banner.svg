@@ -1,0 +1,233 @@
+<svg width="100%" height="350" viewBox="0 0 1600 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated black-hole navigation telemetry display">
+
+  <!-- ============================================================
+       BLACK HOLE NAVIGATION TELEMETRY — monochrome, animated,
+       self-contained SVG (SMIL only, no JS/CSS/external assets).
+       Single accent hue (#CFE9FF) at varying opacity throughout;
+       the event horizon itself is pure black.
+       ============================================================ -->
+
+  <defs>
+    <filter id="t-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- orbital guide paths: doubled-arc technique draws a full ellipse,
+         reused both as the visible ring stroke and as a motion path -->
+    <path id="orbit1" d="M 710 175 A 90 34 0 1 1 890 175 A 90 34 0 1 1 710 175"/>
+    <path id="orbit2" d="M 670 175 A 130 50 0 1 1 930 175 A 130 50 0 1 1 670 175"/>
+    <path id="orbit3" d="M 625 175 A 175 68 0 1 1 975 175 A 175 68 0 1 1 625 175"/>
+    <path id="orbit4" d="M 575 175 A 225 88 0 1 1 1025 175 A 225 88 0 1 1 575 175"/>
+    <path id="orbit5" d="M 510 175 A 290 115 0 1 1 1090 175 A 290 115 0 1 1 510 175"/>
+
+    <!-- gravitationally-bent guide paths for binary streams / warped symbols -->
+    <path id="bend1" d="M 250 175 Q 800 40 1350 175" fill="none"/>
+    <path id="bend2" d="M 280 175 Q 800 320 1320 175" fill="none"/>
+    <path id="bend3" d="M 500 175 Q 800 100 1100 175" fill="none"/>
+  </defs>
+
+  <!-- ===================== BACKGROUND: stars + particle field ===================== -->
+  <g fill="#CFE9FF">
+    <circle cx="45" cy="40" r="1" opacity="0.5"/>
+    <circle cx="120" cy="70" r="0.8" opacity="0.35"/>
+    <circle cx="80" cy="120" r="1.1" opacity="0.55"/>
+    <circle cx="180" cy="30" r="0.9" opacity="0.4"/>
+    <circle cx="40" cy="200" r="1" opacity="0.5"/>
+    <circle cx="150" cy="250" r="0.8" opacity="0.35"/>
+    <circle cx="90" cy="300" r="1" opacity="0.45">
+      <animate attributeName="opacity" values="0.45;0.1;0.45" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="90" r="0.9" opacity="0.4"/>
+    <circle cx="1540" cy="45" r="1" opacity="0.5"/>
+    <circle cx="1470" cy="80" r="0.8" opacity="0.35"/>
+    <circle cx="1500" cy="140" r="1.1" opacity="0.5"/>
+    <circle cx="1420" cy="35" r="0.9" opacity="0.4"/>
+    <circle cx="1560" cy="210" r="1" opacity="0.5"/>
+    <circle cx="1450" cy="260" r="0.8" opacity="0.35">
+      <animate attributeName="opacity" values="0.35;0.08;0.35" dur="6.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1510" cy="305" r="1" opacity="0.45"/>
+    <circle cx="1400" cy="150" r="0.9" opacity="0.4"/>
+    <circle cx="380" cy="35" r="0.9" opacity="0.4"/>
+    <circle cx="450" cy="60" r="0.8" opacity="0.3"/>
+    <circle cx="1150" cy="35" r="0.9" opacity="0.4"/>
+    <circle cx="1220" cy="65" r="0.8" opacity="0.3"/>
+    <circle cx="330" cy="315" r="0.9" opacity="0.4"/>
+    <circle cx="410" cy="330" r="0.8" opacity="0.3"/>
+    <circle cx="1190" cy="315" r="0.9" opacity="0.4"/>
+    <circle cx="1260" cy="330" r="0.8" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.06;0.3" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="15" r="0.8" opacity="0.3"/>
+    <circle cx="800" cy="335" r="0.8" opacity="0.3"/>
+    <circle cx="60" cy="10" r="0.9" opacity="0.4"/>
+    <circle cx="1550" cy="335" r="0.9" opacity="0.4"/>
+  </g>
+
+  <!-- infalling particles: drift toward the horizon and fade as they arrive -->
+  <g fill="#CFE9FF">
+    <circle r="1.3" opacity="0">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M 300 90 Q 550 140 730 175"/>
+      <animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.6;1" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.1" opacity="0">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 1300 260 Q 1050 210 870 175" begin="1.5s"/>
+      <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.6;1" dur="9s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle r="1.2" opacity="0">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M 250 280 Q 500 230 725 178" begin="3s"/>
+      <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.6;1" dur="8s" repeatCount="indefinite" begin="3s"/>
+    </circle>
+    <circle r="1" opacity="0">
+      <animateMotion dur="10s" repeatCount="indefinite" path="M 1350 100 Q 1080 140 875 172" begin="0.8s"/>
+      <animate attributeName="opacity" values="0;0.75;0" keyTimes="0;0.6;1" dur="10s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <circle r="1.2" opacity="0">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M 800 20 Q 800 90 800 128" begin="2.2s"/>
+      <animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.6;1" dur="6.5s" repeatCount="indefinite" begin="2.2s"/>
+    </circle>
+    <circle r="1.1" opacity="0">
+      <animateMotion dur="7.5s" repeatCount="indefinite" path="M 800 330 Q 800 250 800 222" begin="4s"/>
+      <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.6;1" dur="7.5s" repeatCount="indefinite" begin="4s"/>
+    </circle>
+    <circle r="1" opacity="0">
+      <animateMotion dur="9.5s" repeatCount="indefinite" path="M 130 175 Q 400 175 730 175" begin="1s"/>
+      <animate attributeName="opacity" values="0;0.75;0" keyTimes="0;0.6;1" dur="9.5s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle r="1.1" opacity="0">
+      <animateMotion dur="8.5s" repeatCount="indefinite" path="M 1470 175 Q 1200 175 870 175" begin="3.6s"/>
+      <animate attributeName="opacity" values="0;0.8;0" keyTimes="0;0.6;1" dur="8.5s" repeatCount="indefinite" begin="3.6s"/>
+    </circle>
+  </g>
+
+  <!-- deflected particles: swing around the horizon rather than falling in -->
+  <g fill="#CFE9FF">
+    <circle r="1.1" opacity="0.7" filter="url(#t-glow)">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M 480 60 Q 800 8 1120 60"/>
+    </circle>
+    <circle r="1" opacity="0.6" filter="url(#t-glow)">
+      <animateMotion dur="15s" repeatCount="indefinite" path="M 480 290 Q 800 342 1120 290" begin="2s"/>
+    </circle>
+    <circle r="1.1" opacity="0.65" filter="url(#t-glow)">
+      <animateMotion dur="13s" repeatCount="indefinite" path="M 1120 90 Q 800 30 480 90" begin="4s"/>
+    </circle>
+    <circle r="1" opacity="0.55" filter="url(#t-glow)">
+      <animateMotion dur="16s" repeatCount="indefinite" path="M 1120 260 Q 800 312 480 260" begin="6s"/>
+    </circle>
+  </g>
+
+  <!-- ===================== CENTER: event horizon ===================== -->
+  <circle cx="800" cy="175" r="50" fill="#000000"/>
+  <circle cx="800" cy="175" r="51.5" fill="none" stroke="#EAF6FF" stroke-width="1.4" opacity="0.9" filter="url(#t-glow)"/>
+
+  <!-- ===================== MIDGROUND: binary streams + symbols ===================== -->
+  <text font-family="'Courier New',monospace" font-size="12" letter-spacing="2" fill="#CFE9FF" opacity="0.5">
+    <textPath href="#bend1" startOffset="0%">
+      110011001100110011001100110011001100110011001100
+      <animate attributeName="startOffset" from="0%" to="100%" dur="22s" repeatCount="indefinite"/>
+    </textPath>
+  </text>
+  <text font-family="'Courier New',monospace" font-size="11" letter-spacing="2" fill="#CFE9FF" opacity="0.42">
+    <textPath href="#bend2" startOffset="0%">
+      011010110101011010110101011010110101011010110101
+      <animate attributeName="startOffset" from="100%" to="0%" dur="27s" repeatCount="indefinite"/>
+    </textPath>
+  </text>
+  <text font-family="'Courier New',monospace" font-size="11" letter-spacing="2" fill="#CFE9FF" opacity="0.38">
+    <textPath href="#bend3" startOffset="0%">
+      101101001011010010110100101101001011010010110100
+      <animate attributeName="startOffset" from="0%" to="100%" dur="17s" repeatCount="indefinite"/>
+    </textPath>
+  </text>
+
+  <!-- mathematical symbols: two riding the bent trajectory near the hole,
+       three drifting gently through outer space -->
+  <text font-family="Georgia, serif" font-size="20" fill="#CFE9FF" opacity="0.4">
+    <textPath href="#bend3" startOffset="8%">&#8734;</textPath>
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="9s" repeatCount="indefinite"/>
+  </text>
+  <text font-family="Georgia, serif" font-size="18" fill="#CFE9FF" opacity="0.35">
+    <textPath href="#bend2" startOffset="70%">&#955;</textPath>
+    <animate attributeName="opacity" values="0.2;0.45;0.2" dur="11s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="140" y="80" font-family="Georgia, serif" font-size="24" fill="#CFE9FF" opacity="0.38">
+    &#960;
+    <animateTransform attributeName="transform" type="translate" values="0,0; 6,-8; -3,4; 0,0" dur="26s" repeatCount="indefinite"/>
+  </text>
+  <text x="1400" y="90" font-family="Georgia, serif" font-size="24" fill="#CFE9FF" opacity="0.36">
+    &#931;
+    <animateTransform attributeName="transform" type="translate" values="0,0; -7,6; 4,-5; 0,0" dur="31s" repeatCount="indefinite"/>
+  </text>
+  <text x="200" y="290" font-family="Georgia, serif" font-size="22" fill="#CFE9FF" opacity="0.35">
+    &#8710;
+    <animateTransform attributeName="transform" type="translate" values="0,0; 5,7; -6,-3; 0,0" dur="24s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ===================== FOREGROUND: orbital rings + distortion ===================== -->
+  <!-- gravitational distortion ripples, staggered, very subtle -->
+  <g fill="none" stroke="#CFE9FF">
+    <circle cx="800" cy="175" r="60" stroke-width="0.7" opacity="0">
+      <animate attributeName="r" values="60;340" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.22;0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="175" r="60" stroke-width="0.7" opacity="0">
+      <animate attributeName="r" values="60;340" dur="16s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.22;0" dur="16s" begin="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="175" r="60" stroke-width="0.7" opacity="0">
+      <animate attributeName="r" values="60;340" dur="16s" begin="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.22;0" dur="16s" begin="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="175" r="60" stroke-width="0.7" opacity="0">
+      <animate attributeName="r" values="60;340" dur="16s" begin="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.22;0" dur="16s" begin="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- HUD bezel: faint crosshair + tick ring -->
+  <g stroke="#CFE9FF" fill="none">
+    <line x1="40" y1="175" x2="1560" y2="175" stroke-width="0.6" stroke-dasharray="1 10" opacity="0.08"/>
+    <line x1="800" y1="20" x2="800" y2="330" stroke-width="0.6" stroke-dasharray="1 10" opacity="0.08"/>
+    <circle cx="800" cy="175" r="154" stroke-width="1.4" stroke-dasharray="2 15" opacity="0.16"/>
+  </g>
+
+  <!-- orbital rings, each rotating at its own speed and direction -->
+  <g fill="none" stroke="#CFE9FF">
+    <use href="#orbit1" stroke-width="0.9" stroke-dasharray="2 5" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 800 175" to="360 800 175" dur="14s" repeatCount="indefinite"/>
+    </use>
+    <use href="#orbit2" stroke-width="0.9" stroke-dasharray="1 6" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" from="360 800 175" to="0 800 175" dur="22s" repeatCount="indefinite"/>
+    </use>
+    <use href="#orbit3" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.32">
+      <animateTransform attributeName="transform" type="rotate" from="0 800 175" to="360 800 175" dur="34s" repeatCount="indefinite"/>
+    </use>
+    <use href="#orbit4" stroke-width="0.8" stroke-dasharray="1 7" opacity="0.24">
+      <animateTransform attributeName="transform" type="rotate" from="360 800 175" to="0 800 175" dur="50s" repeatCount="indefinite"/>
+    </use>
+    <use href="#orbit5" stroke-width="0.7" stroke-dasharray="2 9" opacity="0.16">
+      <animateTransform attributeName="transform" type="rotate" from="0 800 175" to="360 800 175" dur="75s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <circle r="2.2" fill="#EAF6FF" filter="url(#t-glow)">
+    <animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orbit1"/></animateMotion>
+  </circle>
+  <circle r="1.8" fill="#EAF6FF" filter="url(#t-glow)" opacity="0.85">
+    <animateMotion dur="22s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orbit2"/></animateMotion>
+  </circle>
+  <circle r="1.6" fill="#EAF6FF" filter="url(#t-glow)" opacity="0.7">
+    <animateMotion dur="34s" repeatCount="indefinite"><mpath href="#orbit3"/></animateMotion>
+  </circle>
+  <circle r="1.4" fill="#EAF6FF" filter="url(#t-glow)" opacity="0.6">
+    <animateMotion dur="50s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orbit4"/></animateMotion>
+  </circle>
+
+  <!-- energy pulse: a single deliberate ring emerging from the horizon -->
+  <circle cx="800" cy="175" r="52" fill="none" stroke="#EAF6FF" stroke-width="1.2" opacity="0">
+    <animate attributeName="r" values="52;135" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+</svg>
