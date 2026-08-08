@@ -28,18 +28,7 @@
 
 <div align="center">
 
-```
-┌──────────────────────────────────────────┐
-│  ▓ PLAYER STATUS                          │
-│                                            │
-│  CLASS : CS Undergrad · Data Science      │
-│  QUEST : Build cool stuff, break it, fix  │
-│  BASE  : Visakhapatnam, India             │
-│  HP    : ████████████████████  ONLINE     │
-└──────────────────────────────────────────┘
-```
-
-<img src="https://img.shields.io/badge/STATUS-ONLINE-5FE0FF?style=flat-square&labelColor=14092e"/>
+<img src="./assets/vitals-panel.svg" width="100%"/>
 
 </div>
 
