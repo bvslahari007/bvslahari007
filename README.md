@@ -14,21 +14,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=20&duration=3000&pause=1200&color=FF9A4D&center=true&vCenter=true&width=700&height=60&lines=LAHARI.EXE;CODE+%2B+COFFEE+%2B+COORDINATES;EXPLORER+OF+DIGITAL+FRONTIERS;TRANSMISSION+READY" alt="identity"/>
 
 </div>
-
-<div align="center">
-<img src="./assets/deck-vitals.svg" width="70%"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-<img src="./assets/vitals-panel.svg" width="100%"/>
-
-</div>
-
-<br/><br/>
-
 <div align="center">
 <img src="./assets/deck-flightrecorder.svg" width="70%"/>
 </div>
@@ -42,13 +27,9 @@
 
 </div>
 
-<br/><br/>
-
 <div align="center">
 <img src="./assets/deck-comms.svg" width="70%"/>
 </div>
-
-<br/>
 
 <div align="center">
 
@@ -61,13 +42,9 @@
 
 </div>
 
-<br/><br/>
-
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=14&duration=2200&pause=800&color=FF4FA3&center=true&vCenter=true&width=700&height=70&lines=SIGNAL+WEAKENING...;ENTERING+CRYO-SLEEP...;SEE+YOU+ON+THE+OTHER+SIDE" alt="shutdown sequence"/>
-
-<br/>
 
 `> SIGNAL TERMINATED — UNTIL NEXT ORBIT`
 
