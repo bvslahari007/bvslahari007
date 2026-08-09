@@ -30,59 +30,6 @@
 <br/><br/>
 
 <div align="center">
-<img src="./assets/deck-tars.svg" width="70%"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-<details>
-<summary><b>◈ ACCESS TARS INTERFACE</b></summary>
-<br/>
-
-```
-HONESTY     ██████████████████░░   92%
-HUMOR       ███████████████░░░░░   75%
-SARCASM     ████████████████████  100%   [LOCKED]
-DISCRETION  ██░░░░░░░░░░░░░░░░░░   10%
-```
-
-*"Everybody good? Plenty of slaves for my robot colony?"*
-
-</details>
-
-</div>
-
-<br/><br/>
-
-<div align="center">
-<img src="./assets/deck-deepspace.svg" width="70%"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-```
-...  -  .-  -.--     -.-.  ..-  .-.  ..  ---  ..-  ...
-```
-
-<details>
-<summary><b>◈ DECODE TRANSMISSION</b></summary>
-<br/>
-
-**DECODED:** STAY CURIOUS
-
-*Some signals are worth decoding twice.*
-
-</details>
-
-</div>
-
-<br/><br/>
-
-<div align="center">
 <img src="./assets/deck-flightrecorder.svg" width="70%"/>
 </div>
 
